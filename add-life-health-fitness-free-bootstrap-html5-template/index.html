@@ -79,12 +79,12 @@
       <section id="form">
       <div class="form-popup" id="myForm">
         <form class="form-container" id="therapyForm">
-          <h1 style="text-align: center; color:#070707;">Get Free Evaluation</h1>
+          
       
           <!-- Step 1 -->
           <div class="form-step" id="step1">
-            <p>👨‍👩‍👧 <strong>Who needs therapy?</strong></p>
-            <label><input type="checkbox" name="person" value="Child"> Child</label><br>
+            <h1>👨‍👩‍👧 <strong >Who needs therapy?</strong></h1>
+            <label><input type="checkbox" name="person" value="Child" > Child</label><br>
             <label><input type="checkbox" name="person" value="Adult"> Adult</label>
             <div style="text-align:center;">
               <button type="button" class="btn next-btn" onclick="nextStep(1)">Next </button>
@@ -94,8 +94,8 @@
       
           <!-- Step 2 -->
           <div class="form-step" id="step2">
-            <p>🗣️ <strong>What are you looking therapy for?</strong></p>
-            <label><input type="checkbox" name="therapy" value="1000"> Unclear speech</label><br>
+            <h1>🗣️ <strong>What are you looking therapy for?</strong></h1>
+            <label><input type="checkbox" name="therapy" value="1000" style="font-size: larger;"> Unclear speech</label><br>
             <label><input type="checkbox" name="therapy" value="2000"> Stammering</label><br>
             <label><input type="checkbox" name="therapy" value="3000"> Fast speech</label><br>
             <label><input type="checkbox" name="therapy" value="4000"> Speech delay</label><br>
@@ -103,26 +103,29 @@
             <label><input type="checkbox" name="therapy" value="6000"> Developmental delay</label><br>
             <label><input type="checkbox" name="therapy" value="7000"> Reading/Writing difficulty</label>
             <div style="text-align:center;">
+            <button type="button" class="btn prev-btn" onclick="prevStep(2)">Prev </button>
               <button type="button" class="btn next-btn" onclick="nextStep(2)">Next </button>
-              <button type="button" class="btn prev-btn" onclick="prevStep(2)">Prev </button>
+              
             </div>
           </div>
       
           <!-- Step 3 -->
           <div class="form-step" id="step3">
-            <p>🌐 <strong>Preferred Language</strong></p>
+            <h1>🌐 <strong style="font-size: large;">Preferred Language</strong></h1>
             <label><input type="checkbox" name="language" value="Hindi"> Hindi</label><br>
             <label><input type="checkbox" name="language" value="English"> English</label>
             <div style="text-align:center;">
-              <button type="button" class="btn next-btn" onclick="nextStep(3)">Next </button>
+              
               <button type="button" class="btn prev-btn" onclick="prevStep(3)">Prev </button>
+              <button type="button" class="btn next-btn" onclick="nextStep(3)">Next </button>
             </div>
           </div>
       
           <!-- Final Submit -->
           <div class="form-step" id="submitStep">
-            <button type="submit" class="btn">🚀 Submit</button>
+            
             <button type="button" class="btn prev-btn" onclick="prevStep(4)">Prev </button>
+            <button type="submit" class="btn">🚀 Submit</button>
           </div>
         </form>
       </div>
