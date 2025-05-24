@@ -545,7 +545,7 @@ input:checked ~ span::after{
   padding: 20px;
   padding-left: 86px;
   position: relative;
-  background: #0b0b0b;
+  background: #fff;
   border-radius: 0 0 20px 0;
   border: #F9690B 2px solid;
 }
@@ -558,7 +558,7 @@ input:checked ~ span::after{
   line-height: 53px;
   text-align: center;
   width: 79px; 
-  color: #085C98;
+  color: #fff;
   /* background:#fff; */
   /* box-shadow: inset 0 0 0 1px #d7d7d7; */
   /* -webkit-box-shadow: inset 0 0 0 1px #d7d7d7; */
@@ -575,8 +575,9 @@ input:checked ~ span::after{
   border: 6px #fff solid;
 }
 .features .media.service-box .pull-left > i{
-color: #FFE3D2;
+color: #FFE3D2 !important;;
 font-size: 30px;
+font-weight: bold;
 padding-top: 10px;
 }
 .media.service-box:hover .pull-left > i {  
