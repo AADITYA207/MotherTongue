@@ -36,10 +36,10 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Home</a></li>  
-                        <li class="scroll"><a href="#services">Classes</a></li>
+                        <li class="scroll"><a href="#services">PROGRAM</a></li>
                         <!-- <li class="scroll"><a href="#about">About</a></li>  -->
-                        <li class="scroll"><a href="#our-team">Trainers</a></li>
-						<li class="scroll"><a href="#portfolio">Gallery</a></li>
+                        <li class="scroll"><a href="#our-team">Our eXPERTS</a></li>
+						<li class="scroll"><a href="#portfolio">Testimonies</a></li>
                         <li class="scroll"><a href="#pricing">Pricing</a></li>
                         <li class="scroll"><a href="#contact-us">Contact</a></li>                        
                     </ul>
@@ -67,139 +67,140 @@
 <!-- Popup Form -->
 <!-- Popup Form for Speech Therapy -->
 <!-- Popup Form for Speech Therapy -->
-
-
-             
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section id="form">
-      <div class="form-popup" id="myForm">
-        <form class="form-container" id="therapyForm">
-          
+    <section>
+        
+    </section>
+        <section id="form">
+            <div class="form-popup" id="myForm">
+                <form class="form-container" id="therapyForm">
+                    <!-- Step 1 -->
+                    <div class="form-step" id="step1">
+                        <h1>👨‍👩‍👧 <strong >Who needs therapy?</strong></h1>
+                        <label><input type="checkbox" name="person" value="Child" > Child</label><br>
+                        <label><input type="checkbox" name="person" value="Adult"> Adult</label>
+                        <div style="text-align:center;">
+                            <button type="button" class="btn next-btn" onclick="nextStep(1)">Next </button>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="form-step" id="step2">
+                        <h1>🗣️ <strong>What are you looking therapy for?</strong></h1>
+                        <label><input type="checkbox" name="therapy" value="1000" style="font-size: larger;"> Unclear speech</label><br>
+                        <label><input type="checkbox" name="therapy" value="2000"> Stammering</label><br>
+                        <label><input type="checkbox" name="therapy" value="3000"> Fast speech</label><br>
+                        <label><input type="checkbox" name="therapy" value="4000"> Speech delay</label><br>
+                        <label><input type="checkbox" name="therapy" value="5000"> Stroke/Trauma injury</label><br>
+                        <label><input type="checkbox" name="therapy" value="6000"> Developmental delay</label><br>
+                        <label><input type="checkbox" name="therapy" value="7000"> Reading/Writing difficulty</label>
+                        <div style="text-align:center;">
+                            <button type="button" class="btn prev-btn" onclick="prevStep(2)">Prev </button>
+                            <button type="button" class="btn next-btn" onclick="nextStep(2)">Next </button>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="form-step" id="step3">
+                        <h1>🌐 <strong style="font-size: large;">Preferred Language</strong></h1>
+                        <label><input type="checkbox" name="language" value="Hindi"> Hindi</label><br>
+                        <label><input type="checkbox" name="language" value="English"> English</label>
+                        <div style="text-align:center;">
+                            <button type="button" class="btn prev-btn" onclick="prevStep(3)">Prev </button>
+                            <button type="button" class="btn next-btn" onclick="nextStep(3)">Next </button>
+                        </div>
+                    </div>
       
-          <!-- Step 1 -->
-          <div class="form-step" id="step1">
-            <h1>👨‍👩‍👧 <strong >Who needs therapy?</strong></h1>
-            <label><input type="checkbox" name="person" value="Child" > Child</label><br>
-            <label><input type="checkbox" name="person" value="Adult"> Adult</label>
-            <div style="text-align:center;">
-              <button type="button" class="btn next-btn" onclick="nextStep(1)">Next </button>
-              
+                    <!-- Final Submit -->
+                    <div class="form-step" id="submitStep">
+                        <button type="button" class="btn prev-btn" onclick="prevStep(4)">Prev </button>
+                        <button type="submit" class="btn">🚀 Submit</button>
+                    </div>
+                </form>
             </div>
-          </div>
-      
-          <!-- Step 2 -->
-          <div class="form-step" id="step2">
-            <h1>🗣️ <strong>What are you looking therapy for?</strong></h1>
-            <label><input type="checkbox" name="therapy" value="1000" style="font-size: larger;"> Unclear speech</label><br>
-            <label><input type="checkbox" name="therapy" value="2000"> Stammering</label><br>
-            <label><input type="checkbox" name="therapy" value="3000"> Fast speech</label><br>
-            <label><input type="checkbox" name="therapy" value="4000"> Speech delay</label><br>
-            <label><input type="checkbox" name="therapy" value="5000"> Stroke/Trauma injury</label><br>
-            <label><input type="checkbox" name="therapy" value="6000"> Developmental delay</label><br>
-            <label><input type="checkbox" name="therapy" value="7000"> Reading/Writing difficulty</label>
-            <div style="text-align:center;">
-            <button type="button" class="btn prev-btn" onclick="prevStep(2)">Prev </button>
-              <button type="button" class="btn next-btn" onclick="nextStep(2)">Next </button>
-              
-            </div>
-          </div>
-      
-          <!-- Step 3 -->
-          <div class="form-step" id="step3">
-            <h1>🌐 <strong style="font-size: large;">Preferred Language</strong></h1>
-            <label><input type="checkbox" name="language" value="Hindi"> Hindi</label><br>
-            <label><input type="checkbox" name="language" value="English"> English</label>
-            <div style="text-align:center;">
-              
-              <button type="button" class="btn prev-btn" onclick="prevStep(3)">Prev </button>
-              <button type="button" class="btn next-btn" onclick="nextStep(3)">Next </button>
-            </div>
-          </div>
-      
-          <!-- Final Submit -->
-          <div class="form-step" id="submitStep">
-            
-            <button type="button" class="btn prev-btn" onclick="prevStep(4)">Prev </button>
-            <button type="submit" class="btn">🚀 Submit</button>
-          </div>
-        </form>
-      </div>
-      
-      <script>
-       let currentStep = 1;
+      </section>      
+    <script>
+        let currentStep = 1;
+        function openForm() {
+        const popup = document.getElementById("therapyForm");
+        popup.style.display = "flex";
+        currentStep = 1;
+        showStep(currentStep);
+        }
 
-// Show the popup and initialize the first step
-function openForm() {
-  const popup = document.getElementById("myForm");
-  popup.style.display = "flex";
-  currentStep = 1;
-  showStep(currentStep);
-}
+        // Hide the popup and reset step
+        function closeForm() {
+        const popup = document.getElementById("therapyForm");
+        popup.style.display = "flex";
+        currentStep = 1;
+        showStep(currentStep);
+        }
 
-// Hide the popup and reset step
-function closeForm() {
-  const popup = document.getElementById("myForm");
-  popup.style.display = "flex";
-  currentStep = 1;
-  showStep(currentStep);
-}
+        // Show only the current step
+        function showStep(step) {
+        const steps = document.querySelectorAll(".form-step");
+        steps.forEach((el, index) => {
+            el.style.display = (index === step - 1) ? "block" : "none";
+        });
+        }
 
-// Show only the current step
-function showStep(step) {
-  const steps = document.querySelectorAll(".form-step");
-  steps.forEach((el, index) => {
-    el.style.display = (index === step - 1) ? "block" : "none";
-  });
-}
+        // Go to the next step
+        function nextStep(step) {
+        currentStep = step + 1;
+        showStep(currentStep);
+        }
 
-// Go to the next step
-function nextStep(step) {
-  currentStep = step + 1;
-  showStep(currentStep);
-}
+        // Go to the previous step (if you implement Back buttons)
+        function prevStep(step) {
+        currentStep = step - 1;
+        showStep(currentStep);
+        }
 
-// Go to the previous step (if you implement Back buttons)
-function prevStep(step) {
-  currentStep = step - 1;
-  showStep(currentStep);
-}
-
-// Close form when clicking outside the form container
-window.addEventListener("click", function (e) {
-  const popup = document.getElementById("myForm");
-  const formContainer = popup.querySelector(".form-container");
-  if (e.target === popup) {
-    closeForm();
-  }
-});
-
-      </script>
-      </section>
-      
-      
+        // Close form when clicking outside the form container
+        window.addEventListener("click", function (e) {
+        const popup = document.getElementById("myForm");
+        const formContainer = popup.querySelector(".form-container");
+        if (e.target === popup) {
+            closeForm();
+        }
+        });
+    </script>
 
 
- <section id="services" >
+    <section id="services" >
         <div class="container">
-
             <div class="section-header">
+                <h2 class="section-title wow fadeInDown">What we offer</h2>
+                <p class="wow fadeInDown">At MotherTongue, you get a wide variety of online therapy classes and more..<br></p>
                 <h2 class="section-title wow fadeInDown">Choose Whats Best For You</h2>
                 <p class="wow fadeInDown">We offer a variety of therapies to support you and your loved ones on your journey to well-being.</p>
             </div>
 
-            <div class="row">
+            <div class="row" onclick="openForm()">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                         <div class="media service-box">
                             <div class="pull-left">
+                                <i class="fa fa-comment"></i>
                                 <i class="fa fa-comments"></i>
                             </div>
                             <div class="media-body">
+                                <h4 class="media-heading">Speech Therapy</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Assignments</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
                                 <h4 class="media-heading">Speech Therapy</h4>
                                 <p>Our speech therapists sit with the child in a highly relaxing ambience and practice with the child the therapy. The child learns from the expert and follows the same steps to develop fluent speech.</p>
                             </div>
@@ -221,40 +222,28 @@ window.addEventListener("click", function (e) {
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <i class="fa fa-stethoscope"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Pediatric Department</h4>
-                                <p>The qualified doctors ensure that the health of each child is monitored with the best medical care, medical support and services. The department is fully equipped to handle all cases of infants, children and adolescent.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-volume-up"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Hearing Aid Fitting</h4>
-                                <p>The comprehensive hearing test is conducted in the fully equipped clinic to test the hearing range of the child before providing the best hearing aid that helps the child to deal with all situations.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
                                 <i class="fa fa-puzzle-piece"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Sensory Integration</h4>
-                                <p>The sensory integration is the foundation for later complex learning. It involves teaching the brain to interpret sensory experience such as touch, sound, smell, taste and pull of gravity in a play based activities.</p>
+                                <h4 class="media-heading">Fun activitites</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
 
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Progress Track</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms" >
                         <div class="media service-box">
                             <div class="pull-left">
                                 <i class="fa fa-briefcase"></i>
@@ -288,11 +277,13 @@ window.addEventListener("click", function (e) {
                                 <h4 class="media-heading">ABA Therapy</h4>
                                 <p>Applied behaviors analysts are worldwide accepted and proven therapy to help the child suffering from autism learn new positive behavior. The therapy teaches basic learning, reading, and listening and conversation skills.</p>
                             </div>
+                            
                         </div>
                     </div><!--/.col-md-4-->
-                    
+                <a class="btn btn-primary btn-lg" onclick="openForm()">Start My Free Evaluation</a>
                 </div>
-            </div><!--/.row-->    
+            </div><!--/.row--> 
+
         </div><!--/.container-->
     </section><!--/#services-->
 
@@ -301,8 +292,8 @@ window.addEventListener("click", function (e) {
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Who we are</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+                <h2 class="section-title wow fadeInDown">About Us</h2>
+                <p class="wow fadeInDown" >We are a team of dedicated speech therapists and tech guys to help you overcome your speech impedaments, <b>remotely, efficiently and at a cheaper cost</p></b>
             </div>
 
             <div class="row">
@@ -311,7 +302,7 @@ window.addEventListener("click", function (e) {
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Our Fitness Studio</h3>
+                    <h3 class="column-title">Our Journey</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
 <ul class="listarrow">
@@ -322,7 +313,7 @@ window.addEventListener("click", function (e) {
 <li><i class="fa fa-angle-double-right"></i>Round the clock</li>
 </ul>
  
-
+<a class="btn btn-primary btn-lg" onclick="openForm()">Start My Free Evaluation</a>
                 </div>
             </div>
         </div>
@@ -332,7 +323,7 @@ window.addEventListener("click", function (e) {
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">
-OUR TRAINERS
+Our Expert Therapists
 </h2>
 <!-- <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>  -->
             </div>

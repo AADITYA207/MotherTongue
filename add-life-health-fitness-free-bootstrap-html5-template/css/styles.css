@@ -89,7 +89,7 @@ text-align:center;
   border-radius: 0;
 }
 .btn.btn-primary {
-  background: #CD4F00;
+  background: rgb(249, 105, 14);
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
@@ -413,6 +413,7 @@ color: #0b0b0b;
 
 }
 .btn {
+  color:#1f2457;
   align-self: flex-start;
   padding: 8px 16px;
   font-size: 1rem;
@@ -433,7 +434,7 @@ label {
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
-  color: #333;
+  color: #0a0a0a;
   cursor: pointer;
 }
 
@@ -495,7 +496,7 @@ input:checked ~ span::after{
   margin-top: 15px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color .02s;
 }
 
 .btn:hover {
@@ -505,11 +506,6 @@ input:checked ~ span::after{
 .btn.cancel {
   background-color: #ea650d;
 }
-
-
-
-
-
 
 #cta2 {
   background: #45b1da;
@@ -527,34 +523,49 @@ input:checked ~ span::after{
 #cta2 h2 > span {
   color: #45aed6;
 }
-#features h2, #portfolio p{ color: #C3C3C3;}
-#features {
-  padding: 100px 0;
-  background: #FFFFFF;
-  color: #000;
+/* Headings and paragraph colors */
+#features h2, #portfolio p {
+  color: #C3C3C3;
 }
 
+/* Shared Section Padding */
+#features,
+#services {
+  padding: 100px 0 75px;
+}
+
+/* Features Section Styling */
+#features {
+  background: #FFFFFF;
+  color: #1f2457;
+}
+
+/* Adjust first service box in features */
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
-#services, #features {
-  padding: 100px 0 75px;
-}
+
+/* Service Box Base Styling */
 .media.service-box {
   margin: 25px 0 36px;
-  padding: 20px;
-  padding-left: 86px;
+  padding: 20px 20px 20px 86px;
   position: relative;
   background: #fff;
   border-radius: 0 0 20px 0;
   border: #F9690B 2px solid;
 }
+
+/* Icon container on left */
 .media.service-box .pull-left {
   margin-right: 20px;
+  position: absolute;
+  left: -13px;
+  top: -15px;
 }
+
+/* Icon styling */
 .media.service-box .pull-left > i {
   font-size: 35px;
-  /* height: 94px; */
   line-height: 53px;
   text-align: center;
   width: 79px; 
@@ -565,23 +576,36 @@ input:checked ~ span::after{
   transition: background-color 400ms, background-color 400ms;
   position: absolute;
   padding: 14px;
-  /* height: 100%; */
-  left: -13px;
-  top: -15px;
-  vertical-align: middle;
-  background: rgb(249, 105, 14);
+  color: white;
+  background: #ea650d; 
   border-radius: 10% 20%;
-  height: 80px;
-  border: 6px #fff solid;
+  border: 6px solid #fff;
+  transition: background-color 0.05s, color 0.05s;
+  
 }
+
+.media.service-box:hover{
+  background-color: #ea650d; 
+  color:black 
+}
+.media.service-box:hover .pull-left > i {
+  color: rgb(0, 0, 0)
+}
+/* Optional: Custom style override when inside .features */
+#features .media.service-box .pull-left > i {
+  color: #FFE3D2;
+  font-size: 30px;
+  padding-top: 10px;
 .features .media.service-box .pull-left > i{
 color: #FFE3D2 !important;;
 font-size: 30px;
 font-weight: bold;
 padding-top: 10px;
 }
-.media.service-box:hover .pull-left > i {  
-}
+
+/* Optional hover effect */
+
+
 #portfolio {
   padding: 100px 0;
   background: #FFFFFF;
