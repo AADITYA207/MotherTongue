@@ -1,0 +1,14 @@
+# Python virtual environment
+backend/mothertongue/
+
+# Environment variables
+.env
+
+# Python cache
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+# VSCode settings (optional)
+.vscode/
