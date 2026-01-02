@@ -239,7 +239,7 @@
           console.log(fullphone);
           const data = { person, therapy, language, fullphone, timestamp: new Date().toISOString().slice(0,19) };
 
-          fetch('http://localhost:8000/api/submit', {
+          fetch('https://vszx0i3k3f.execute-api.ap-southeast-2.amazonaws.com/prod/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
